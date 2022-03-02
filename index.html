@@ -5,175 +5,272 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
-	
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/normalize.css" type="text/css" media="screen" />
+    
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" media="screen" />
+
+
   </head>
   
   <body>
-	<header>
+	<header class="main-header">
+      <h1>PORTFOLIO</h1>
       <nav>
-        <h1>Portfolio</h1>
-        <a href="#">Contact me</a>
+        <ul> 
+          <li class="contact-me">
+            <a href="#">Contact me</a>            
+          </li>
+        </ul>
       </nav>
     </header>
+    <div class="gap"></div>
     <main>
-      <section>
-        <article>
-          <header>
-            <img width="320" height="320" alt="profile_photo" src="https://images.pexels.com/photos/2061168/pexels-photo-2061168.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>               </header>
+      <section >
+        <article class="profile-card">
+          <figure class='profile__picture'>
+              <img width="320" height="320" alt="profile_photo" src="https://images.pexels.com/photos/2061168/pexels-photo-2061168.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>              
+          </figure>
+          
+          <header class="card__header">
+            <img width="320" height="150px" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                 />
+           </header>
 
-          <div>
+          <div class="profile__description">
             <h2>Hi, I am Edisson Palomares</h2>
-            <p>I am passionate about programming and software development.<br/>I am interested in web development and web apps.>
-          </div>
+            <p>I am passionate about programming and software development focused on web pages and web applications.
+            </p>
 
-          <footer>
-            <a href="#">Contact me</a>
-          </footer>
+            <div class="logo-container">
+              <a class="button-contact" href="#">
+                Contact me
+                <span>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg class="logo-arrow" fill="none" width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              </a>
+            </div>
+          </div>
+          
         </article>
 
-        <article>
+        <article class="stack"> 
           <header>
             <h2>My web stack</h2>
           </header>
 
-          <div className="stack-container">
+          <div>
             <ul>
               <li>
-                <p>Frontend</p>
-                <ul>
-                  <li>html5</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                  <li>react.js</li>
+                <div class="logo-container">
+                  <span class="logo-code">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg fill="none" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="m9 21h-1c-1.1046 0-2-0.8943-2-1.9989 0-1.551 0-3.6568-1e-5 -5.0011 0-1-1.5-2-1.5-2s1.5-1 1.5-2v-5.0009c0-1.1046 0.89543-1.9991 2-1.9991h1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="m15 21h1c1.1046 0 2-0.8943 2-1.9989v-5.0011c0-1 1.5-2 1.5-2s-1.5-1-1.5-2v-5.0009c0-1.1046-0.8954-1.9991-2-1.9991h-1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                  </span>
+                  <p class="card__title">Frontend</p>                  
+                </div>
+
+                <ul class="stack__list">
+                  <li>
+                    <img class="stack-logo" alt="html5-logo" src="./img/html5-logo.svg"/>
+                  </li>
+                  <li>
+                    <img class="stack-logo" alt="css3-logo" src="./img/css3-logo.svg"/>
+
+                  </li>
+                  <li>
+                    <img class="stack-logo js-logo" alt="js-logo" src="./img/js-logo.svg"/>
+
+                    </li>
+                  <li>
+                    <img class="stack-logo" alt="react-logo" src="./img/react-logo.svg"/>                  
+                  </li>
                 </ul>
               </li>
               
               <li>
-                <p>Backend</p>
-                <ul>
-                  <li>php</li>
-                  <li>laravel</li>
+                <div class="logo-container">
+                  <span class="logo-code">
+                    <?xml version="1.0" encoding="UTF-8"?>
+<svg fill="none" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m6 18.01l0.01-0.0111" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m6 6.01l0.01-0.01111" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 9.4V2.6C2 2.26863 2.26863 2 2.6 2H21.4C21.7314 2 22 2.26863 22 2.6V9.4C22 9.73137 21.7314 10 21.4 10H2.6C2.26863 10 2 9.73137 2 9.4Z" stroke="currentColor" stroke-width="1.5"/>
+<path d="m2 21.4v-6.8c0-0.3314 0.26863-0.6 0.6-0.6h18.8c0.3314 0 0.6 0.2686 0.6 0.6v6.8c0 0.3314-0.2686 0.6-0.6 0.6h-18.8c-0.33137 0-0.6-0.2686-0.6-0.6z" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+
+                  </span>
+                  <p class="card__title">Backend</p>
+                </div>
+                <ul class="stack__list">
+                  <li>
+                    <img class="stack-logo" alt="php-logo" src="./img/php-logo.svg"/>
+                    </li>
+                  <li>
+                    <img class="stack-logo" alt="laravel-logo" src="./img/laravel-logo.svg"/>         
+                  </li>
+                  <li>
+                    <img class="laravel-logo" alt="laravel-logo" src="./img/laravel-min.svg"/>                             
+                  </li>
                 </ul>
               </li>
 
               <li>
-                <p>Database</p>
-                <ul>
-                  <li>mysql</li>
-                  <li>postgresql</li>
+                <div class="logo-container">
+                  <span class="logo-code">
+                    <?xml version="1.0" encoding="UTF-8"?>
+<svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m5 12v6s0 3 7 3 7-3 7-3v-6" stroke="currentColor" stroke-width="1.5"/>
+<path d="m5 6v6s0 3 7 3 7-3 7-3v-6" stroke="currentColor" stroke-width="1.5"/>
+<path d="m12 3c7 0 7 3 7 3s0 3-7 3-7-3-7-3 0-3 7-3z" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+                  </span>
+                  <p class="card__title">Database</p>
+                </div>
+      
+                <ul class="stack__list">
+                  <li>
+                    <img class="stack-logo" alt="mysql-logo" src="./img/mysql-logo.svg"/>         
+
+                  </li>
+                  <li>
+                    <img class="stack-logo" alt="postgresql-logo" src="./img/postgresql-logo.svg"/>         
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
         </article>        
       </section>
-      
-      <section>
-        <article>
-          <header>
-            <img alt="Social-app" src="./img/social-app-min.jpg"/>
-          </header>
-          <div>
-            <h2>Social Network App</h2>
-            <p>Simple application made with React Js in frontend and Laravel in the backend.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
-        <article>
-          <header>
-            <img alt="todo.png" src="./img/task-web.png"/>
-          </header>
-          <div>
-            <h2>To-do App</h2>
-            <p>Task list application made with React.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
 
-        <article>
-          <header>
-            <img alt="crud.png" src="./img/crud-php-web.png"/>
-          </header>
-          <div>
-            <h2>Crud App</h2>
-            <p>Application made with PHP.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
+      <div class="slider-container">
+        <section class="portfolio__section">
+          <span id="left-arrow" class="arrow"></span>
+          <span id="right-arrow" class="arrow"></span>
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="Social-app" src="./img/social-app-min.jpg"/>
+            </header>
+            <div class="card__body">
+              <h2>Social Network App</h2>
+              <p>Simple application made with React Js in frontend and Laravel in the backend.</p>
+            </div>
+            <footer class="card__footer"> 
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
+          
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="todo.png" src="./img/task-web.png"/>
+            </header>
+            <div class="card__body">
+              <h2>To-do App</h2>
+              <p>Task list application made with React.</p>
+            </div>
+            
+            <footer class="card__footer">
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
 
-        <article>
-          <header>
-            <img alt="coin.png" src="./img/coin-web.png"/>
-          </header>
-          <div>
-            <h2>Mobile First Web</h2>
-            <p>Web Page made in the Mobile First course.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="crud.png" src="./img/crud-php-web.png"/>
+            </header>
+            <div class="card__body">
+              <h2>Crud App</h2>
+              <p>Application made with PHP.</p>
+            </div>
+            <footer class="card__footer">
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
 
-        <article>
-          <header>
-            <img alt="machine.png" src="./img/machine-web.png"/>
-          </header>
-          <div>
-            <h2>Z80 Machine</h2>
-            <p>Z80 code instruction machine emulated with javascript.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
-        <article>
-          <header>
-            <img alt="3d-scroll.png" src="./img/3d-scroll-web.png"/>
-          </header>
-          <div>
-            <h2>3D carousel</h2>
-            <p>Web Page with a 3D carousel made with css transformations.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="coin.png" src="./img/coin-web.png"/>
+            </header>
+            <div class="card__body">
+              <h2>Mobile First Web</h2>
+              <p>Web Page made in the Mobile First course.</p>
+            </div>
+            <footer class="card__footer">
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
 
-        <article>
-          <header>
-            <img alt="basic.png" src="./img/basic-web.png"/>
-          </header>
-          <div>
-            <h2>Basic Web</h2>
-            <p>Web made with css3 and html5.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="machine.png" src="./img/machine-web.png"/>
+            </header>
+            <div class="card__body">
+              <h2>Z80 Machine</h2>
+              <p>Z80 code instruction machine emulated with javascript.</p>
+            </div>
+            <footer class="card__footer">
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="3d-scroll.png" src="./img/3d-scroll-web.png"/>
+            </header>
+            <div class="card__body">
+              <h2>3D carousel</h2>
+              <p>Web Page with a 3D carousel made with css transformations.</p>
+            </div>
+            <footer class="card__footer">
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
 
-        <article>
-          <header>
-            <img alt="planets.png" src="./img/planets-web.png"/>
-          </header>
-          <div>
-            <h2>Planets Web</h2>
-            <p>Web using css animations.</p>
-          </div>
-          <footer>
-            <button>Web</button>
-          </footer>
-        </article>
-      </section>
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="basic.png" src="./img/basic-web.png"/>
+            </header>
+            
+            <div class="card__body">
+              <h2>Basic Web</h2>
+              <p>Web made with css3 and html5.</p>
+            </div>
+            
+            <footer class="card__footer">
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
+
+          <article class="card">
+            <header class="card__header">
+              <img class="card__image" alt="planets.png" src="./img/planets-web.png"/>
+            </header>
+            <div class="card__body">
+              <h2>Planets Web</h2>
+              <p>Web using css animations.</p>
+            </div>
+            
+            <footer class="card__footer">
+              <button class='button-web'>Web</button>
+            </footer>
+          </article>
+        </section>
+        
+      </div>
+
     </main>
-    <footer>
-      <ul>
+    <footer class="main__footer">
+      <ul id="footer__list">
         <li><a href="">Linkedin</a></li>
         <li><a href="">Github</a></li>
       </ul>
