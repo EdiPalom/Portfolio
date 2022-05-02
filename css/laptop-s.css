@@ -1,0 +1,24 @@
+nav ul:nth-child(1){
+    margin-left:200px;
+}
+
+.card{
+    margin:30px 100px 0;
+    padding:0;
+}
+
+#portrait-bg{
+    height:250px;
+}
+
+.profile__picture{
+    top:40%;
+}
+
+#right-arrow{
+    left:94%;
+}
+
+.section-contact .logo-container{
+    margin-left:200px;
+}

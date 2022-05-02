@@ -1,0 +1,16 @@
+nav ul:nth-child(1){
+    margin-left:100px;
+}
+
+.card{
+    margin:30px 48px 0;
+    padding:0;
+}
+
+#portrait-bg{
+    height:200px;
+}
+
+.profile__picture{
+    top:34%;
+}

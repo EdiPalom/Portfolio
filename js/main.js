@@ -7,6 +7,16 @@ let card = document.getElementsByClassName("card");
 
 let size = card[1].clientWidth;
 
+function query_laptop(x){
+    if(x.matches){
+        size = size * 2;
+    }
+}
+
+let x = window.matchMedia("(min-width: 810px)");
+query_laptop(x);
+x.addListener(query_laptop);
+
 scroll_container.onscroll = ()=>{
     left_arrow.style.visibility = 'visible';
     right_arrow.style.visibility = 'visible';

@@ -1,0 +1,35 @@
+h1{
+    display:inline;
+    margin:22px 0;
+}
+
+.main-header{
+    flex-direction:row;
+}
+
+.card{
+    margin:30px 150px 0;
+    padding:0;
+}
+
+.profile__description .logo-container
+{
+    margin-left:0;
+}
+
+#portrait-bg{
+    height:250px;
+}
+
+.profile__picture{
+    top:40%;
+}
+
+#right-arrow{
+    left:94%;
+}
+
+.section-contact .logo-container{
+    margin-left:200px;
+}
+

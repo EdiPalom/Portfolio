@@ -169,6 +169,14 @@ ul{
     transition:.6s background-color;
 }
 
+#portrait-bg
+{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    object-position:center;
+}
+
 .card__content
 {
     width:100%;
