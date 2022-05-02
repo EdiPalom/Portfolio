@@ -23,7 +23,25 @@
       <nav>
         <ul> 
           <li class="contact-me">
-            <a href="#">Contact me</a>            
+            <a href="https://github.com/Edipalom">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg fill="none" width="32" height="32" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m16 22.027v-2.87c0.0375-0.4768-0.0269-0.9562-0.189-1.4062s-0.4181-0.8604-0.751-1.2038c3.14-0.35 6.44-1.54 6.44-7-3e-4 -1.3962-0.5373-2.7388-1.5-3.75 0.4558-1.2215 0.4236-2.5716-0.09-3.77 0 0-1.18-0.35-3.91 1.48-2.292-0.62118-4.708-0.62118-7 0-2.73-1.83-3.91-1.48-3.91-1.48-0.51363 1.1984-0.54586 2.5485-0.09 3.77-0.96988 1.0187-1.5075 2.3735-1.5 3.78 0 5.42 3.3 6.61 6.44 7-0.329 0.34-0.58273 0.7454-0.74469 1.1899-0.16195 0.4445-0.2285 0.9182-0.1953 1.3901v2.87" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="m9 20.027c-3 0.9732-5.5 0-7-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+            </a>
+          </li>
+
+          <li class="contact-me">
+            <a href="https://linkedin.com/in/edisson-palomares-019a86231">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg fill="none" width="32" height="32" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m21 8v8c0 2.7614-2.2386 5-5 5h-8c-2.7614 0-5-2.2386-5-5v-8c0-2.7614 2.2386-5 5-5h8c2.7614 0 5 2.2386 5 5z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="m7 17v-7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="m11 17v-3.25m0-3.75v3.75m0 0c0-3.75 6-3.75 6 0v3.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="m7 7.01l0.01-0.01111" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+            </a>
           </li>
         </ul>
       </nav>
@@ -33,7 +51,7 @@
       <section >
         <article class="profile-card">
           <figure class='profile__picture'>
-              <img width="320" height="320" alt="profile_photo" src="https://images.pexels.com/photos/2061168/pexels-photo-2061168.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>              
+              <img width="100" height="100" alt="profile_photo" src="https://images.pexels.com/photos/2061168/pexels-photo-2061168.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>              
           </figure>
           
           <header class="card__header">
@@ -47,22 +65,22 @@
             </p>
 
             <div class="logo-container">
-              <a class="button-contact" href="#">
+              <a class="button-contact" href="#contact">
                 Contact me
                 <span>
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg class="logo-arrow" fill="none" width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg class="logo-arrow" fill="none" width="20px" height="20px" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
               </a>
             </div>
           </div>
           
         </article>
 
-        <article class="stack"> 
-          <header>
+        <article> 
+          <header class="subtitle">
             <h2>My web stack</h2>
           </header>
 
@@ -154,125 +172,145 @@
         </article>        
       </section>
 
-      <div class="slider-container">
-        <section class="portfolio__section">
-          <span id="left-arrow" class="arrow"></span>
-          <span id="right-arrow" class="arrow"></span>
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="Social-app" src="./img/social-app-min.jpg"/>
-            </header>
-            <div class="card__body">
-              <h2>Social Network App</h2>
-              <p>Simple application made with React Js in frontend and Laravel in the backend.</p>
-            </div>
-            <footer class="card__footer"> 
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
-          
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="todo.png" src="./img/task-web.png"/>
-            </header>
-            <div class="card__body">
-              <h2>To-do App</h2>
-              <p>Task list application made with React.</p>
-            </div>
+      <section class="section-portfolio">
+        <h2 id="recent-work" class="subtitle">Recent work</h2>
+        <div class="slider-container">
+          <div class="portfolio__container">
+            <span id="left-arrow" class="arrow"></span>
+            <span id="right-arrow" class="arrow"></span>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="Social-app" src="./img/social-app-min.jpg"/>
+              </header>
+              <div class="card__body">
+                <h2>Social Network App</h2>
+                <p>Simple application made with React Js in frontend and Laravel in the backend.</p>
+              </div>
+              <footer class="card__footer"> 
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
             
-            <footer class="card__footer">
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="todo.png" src="./img/task-web.png"/>
+              </header>
+              <div class="card__body">
+                <h2>To-do App</h2>
+                <p>Task list application made with React.</p>
+              </div>
+              
+              <footer class="card__footer">
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
 
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="crud.png" src="./img/crud-php-web.png"/>
-            </header>
-            <div class="card__body">
-              <h2>Crud App</h2>
-              <p>Application made with PHP.</p>
-            </div>
-            <footer class="card__footer">
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="crud.png" src="./img/crud-php-web.png"/>
+              </header>
+              <div class="card__body">
+                <h2>Crud App</h2>
+                <p>Application made with PHP.</p>
+              </div>
+              <footer class="card__footer">
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
 
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="coin.png" src="./img/coin-web.png"/>
-            </header>
-            <div class="card__body">
-              <h2>Mobile First Web</h2>
-              <p>Web Page made in the Mobile First course.</p>
-            </div>
-            <footer class="card__footer">
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="coin.png" src="./img/coin-web.png"/>
+              </header>
+              <div class="card__body">
+                <h2>Mobile First Web</h2>
+                <p>Web Page made in the Mobile First course.</p>
+              </div>
+              <footer class="card__footer">
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
 
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="machine.png" src="./img/machine-web.png"/>
-            </header>
-            <div class="card__body">
-              <h2>Z80 Machine</h2>
-              <p>Z80 code instruction machine emulated with javascript.</p>
-            </div>
-            <footer class="card__footer">
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="3d-scroll.png" src="./img/3d-scroll-web.png"/>
-            </header>
-            <div class="card__body">
-              <h2>3D carousel</h2>
-              <p>Web Page with a 3D carousel made with css transformations.</p>
-            </div>
-            <footer class="card__footer">
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="machine.png" src="./img/machine-web.png"/>
+              </header>
+              <div class="card__body">
+                <h2>Z80 Machine</h2>
+                <p>Z80 code instruction machine emulated with javascript.</p>
+              </div>
+              <footer class="card__footer">
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="3d-scroll.png" src="./img/3d-scroll-web.png"/>
+              </header>
+              <div class="card__body">
+                <h2>3D carousel</h2>
+                <p>Web Page with a 3D carousel made with css transformations.</p>
+              </div>
+              <footer class="card__footer">
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
 
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="basic.png" src="./img/basic-web.png"/>
-            </header>
-            
-            <div class="card__body">
-              <h2>Basic Web</h2>
-              <p>Web made with css3 and html5.</p>
-            </div>
-            
-            <footer class="card__footer">
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="basic.png" src="./img/basic-web.png"/>
+              </header>
+              
+              <div class="card__body">
+                <h2>Basic Web</h2>
+                <p>Web made with css3 and html5.</p>
+              </div>
+              
+              <footer class="card__footer">
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
 
-          <article class="card">
-            <header class="card__header">
-              <img class="card__image" alt="planets.png" src="./img/planets-web.png"/>
-            </header>
-            <div class="card__body">
-              <h2>Planets Web</h2>
-              <p>Web using css animations.</p>
-            </div>
-            
-            <footer class="card__footer">
-              <button class='button-web'>Web</button>
-            </footer>
-          </article>
-        </section>
-        
-      </div>
+            <article class="card">
+              <header class="card__header">
+                <img class="card__image" alt="planets.png" src="./img/planets-web.png"/>
+              </header>
+              <div class="card__body">
+                <h2>Planets Web</h2>
+                <p>Web using css animations.</p>
+              </div>
+              
+              <footer class="card__footer">
+                <button class='button-web'>Web</button>
+              </footer>
+            </article>
+          </div>        
+        </div>
+      </section>
+      
+      <section class="section-contact">
+        <h2 id="contact-me" class="subtitle">Contact me</h2>
 
+        <div id="mail-logo" class="logo-container">
+          <span class="logo-md">
+            <svg width="32" height="32" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 9L12 12.5L17 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="currentColor" stroke-width="1.5"/>
+            </svg>          
+          </span>          
+        </div>
+
+        <p id="mail" class="card__title">palomaredif@gmail.com</p>
+      </section>
+
+      <id id="contact">
+      </id>
     </main>
+    
     <footer class="main__footer">
       <ul id="footer__list">
-        <li><a href="">Linkedin</a></li>
-        <li><a href="">Github</a></li>
+        <li><a href="https://linkedin.com/in/edisson-palomares-019a86231">Linkedin</a></li>
+        <li><a href="https://github.com/Edipalom">Github</a></li>
       </ul>
       
       <div>

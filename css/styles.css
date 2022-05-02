@@ -18,10 +18,7 @@ body
     color:#fff;
     width:100%;
     background-color:#051937;
-}
-
-ul{
-    padding:0;
+    overflow-x:hidden;
 }
 
 a{
@@ -31,10 +28,27 @@ a{
     font-size:var(--md);
 }
 
+nav{
+    margin-bottom:12px;
+}
+
+nav ul li{
+    display:inline-block;
+    float:left;
+    padding:10px;
+    width:150px;
+    margin: 0 4px;
+}
+
+nav ul li a{
+    padding-left:calc(50% - 16px);
+}
+
 h1{
     width:200px;
+    margin: 12px auto;
     display:inline-block;
-    margin-left:30px;
+    text-align:center;
     font-size:var(--lg);
     font-weight:bold;
 }
@@ -42,26 +56,28 @@ h1{
 h2{
     font-size:var(--lg);
     font-weight:bold;
+    line-height:1.3;
+}
+
+ul{
+    list-style:none;
+    padding:0;
 }
 
 .main-header{
-    width:100%;
+    min-width:320px;
     /* background-color:#1e3a8a; */
 
     background-image: linear-gradient(to right, #051937, #05214b, #092a60, #123275, #1e3a8a);
     
     display:flex;
+    flex-direction:column;
     justify-content:space-evenly;
-}
-
-ul{
-    list-style:none;
 }
 
 .contact-me{
     /* padding-top:10px; */
     padding:10px;
-    width:110px;
     transition: .6s background-color, border-radius .6s;
     border-radius:10px;
 }
@@ -69,6 +85,24 @@ ul{
 .contact-me:hover{
     background-color:#2563eb;
     border-radius:5px;
+}
+
+#contact-me
+{
+    margin-bottom:12px;
+}
+
+#mail-logo
+{
+    display: inline-block;
+    margin-left: 52px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#mail
+{
+    display:inline-block;
 }
 
 .gap{
@@ -97,6 +131,8 @@ ul{
 }
 
 .profile__description{
+    min-width:220px;
+    overflow-wrap:break-word;
     margin-top:30px;
     font-size:var(--sm);
     padding:16px;
@@ -135,13 +171,13 @@ ul{
     background-color:#5EAB6D;
 }
 
-.stack{
+.subtitle{
     text-align:center;
 }
 
 .stack-logo
 {
-    width:80px;
+    width:68px;
     height:80px;
 }
 
@@ -215,13 +251,19 @@ footer #footer__list
     color:#2196F3;
 }
 
-.portfolio__section{
+.portfolio__container{
     display:flex;
     height:400px;
     overflow-x:scroll;
     overscroll-behavior-x:contain;
     scroll-snap-type: x proximity;
     margin:0 10px;
+}
+
+#recent-work
+{
+    margin-bottom:0;
+    margin-top:24px;
 }
 
 .card
@@ -271,4 +313,9 @@ footer #footer__list
     background-size:cover;
     width: 50px;
     height: 50px;
+}
+
+.section-contact
+{
+    padding-bottom:12px;
 }
