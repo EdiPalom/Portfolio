@@ -15,6 +15,7 @@ html{
 
 #slider{
     scroll-behavior:smooth;
+    height:auto;
 }
 
 body
@@ -383,4 +384,29 @@ footer #footer__list
     height:443px;
 
     background-image:url('../img/stars.png');
+}
+
+.platzi-logo
+{
+    position:relative;
+    top:-175px;
+}
+
+.platzi-logo img{
+    vertical-align:middle;
+}
+
+.platzi-logo p{
+    display:inline;
+    font-size:var(--sm);
+}
+
+.platzi-card__title
+{
+    margin-top:0;
+}
+
+.platzi-card__content
+{
+    margin-bottom:0;
 }
